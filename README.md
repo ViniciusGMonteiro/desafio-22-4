@@ -1,1 +1,81 @@
 # desafio-22-4
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="min-h-screen bg-base-300 flex items-center justify-center p-4">
+    <div class="card w-full max-w-md bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
+        <div class="card-body">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-primary">Login</h2>
+                <p class="text-base-content opacity-70 mt-2">Acesse sua conta</p>
+            </div>
+            
+            <form>
+                <div class="form-control w-full relative group">
+                    <label class="label" for="email">
+                        <span class="label-text">Email</span>
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="seu@email.com" 
+                        class="input input-bordered w-full focus:input-primary relative z-10 transition-all duration-300"
+                        required
+                    />
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></span>
+                </div>
+                
+                <div class="form-control w-full mt-4 relative group">
+                    <label class="label" for="password">
+                        <span class="label-text">Senha</span>
+                        <a href="#" class="label-text-alt link link-hover text-primary">Esqueceu a senha?</a>
+                    </label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        placeholder="••••••••" 
+                        class="input input-bordered w-full focus:input-primary relative z-10 transition-all duration-300"
+                        required
+                    />
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></span>
+                </div>
+                
+                <div class="form-control mt-4">
+                    <label class="cursor-pointer label justify-start gap-2">
+                        <input type="checkbox" class="checkbox checkbox-primary checkbox-sm" />
+                        <span class="label-text">Lembrar de mim</span>
+                    </label>
+                </div>
+                
+                <div class="form-control mt-6">
+                    <button 
+                        type="submit" 
+                        class="btn btn-primary relative overflow-hidden group"
+                    >
+                        <span class="relative z-10">Entrar</span>
+                        <span class="absolute inset-0 bg-primary-focus transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                    </button>
+                </div>
+            </form>
+            
+            <div class="divider my-6">OU</div>
+            
+            <div class="text-center">
+                <p class="text-base-content">
+                    Ainda não tem uma conta? 
+                    <a href="#" class="link link-primary link-hover font-semibold relative group">
+                        Cadastre-se
+                        <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
