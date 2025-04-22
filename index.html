@@ -6,11 +6,39 @@
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .ph {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .input-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1rem;
+            color: currentColor;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .input-with-icon {
+            padding-left: 3rem !important;
+        }
+        .input-with-icon:focus + .input-icon {
+            color: hsl(var(--p));
+            opacity: 1;
+        }
+        .btn-icon {
+            margin-right: 0.5rem;
+        }
+    </style>
 </head>
 <body class="min-h-screen bg-base-300 flex items-center justify-center p-4">
     <div class="card w-full max-w-md bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
         <div class="card-body">
             <div class="text-center mb-8">
+                <i class="ph ph-user-circle text-5xl text-primary mb-2"></i>
                 <h2 class="text-3xl font-bold text-primary">Login</h2>
                 <p class="text-base-content opacity-70 mt-2">Acesse sua conta</p>
             </div>
@@ -20,35 +48,47 @@
                     <label class="label" for="email">
                         <span class="label-text">Email</span>
                     </label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        placeholder="seu@email.com" 
-                        class="input input-bordered w-full focus:input-primary relative z-10 transition-all duration-300"
-                        required
-                    />
+                    <div class="relative">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="seu@email.com" 
+                            class="input input-bordered w-full focus:input-primary input-with-icon relative z-10 transition-all duration-300"
+                            required
+                        />
+                        <i class="ph ph-envelope input-icon"></i>
+                    </div>
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></span>
                 </div>
                 
                 <div class="form-control w-full mt-4 relative group">
                     <label class="label" for="password">
                         <span class="label-text">Senha</span>
-                        <a href="#" class="label-text-alt link link-hover text-primary">Esqueceu a senha?</a>
+                        <a href="#" class="label-text-alt link link-hover text-primary flex items-center">
+                            <i class="ph ph-question mr-1"></i>
+                            Esqueceu a senha?
+                        </a>
                     </label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        placeholder="••••••••" 
-                        class="input input-bordered w-full focus:input-primary relative z-10 transition-all duration-300"
-                        required
-                    />
+                    <div class="relative">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            placeholder="••••••••" 
+                            class="input input-bordered w-full focus:input-primary input-with-icon relative z-10 transition-all duration-300"
+                            required
+                        />
+                        <i class="ph ph-lock input-icon"></i>
+                    </div>
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></span>
                 </div>
                 
                 <div class="form-control mt-4">
                     <label class="cursor-pointer label justify-start gap-2">
                         <input type="checkbox" class="checkbox checkbox-primary checkbox-sm" />
-                        <span class="label-text">Lembrar de mim</span>
+                        <span class="label-text flex items-center">
+                            <i class="ph ph-bookmark-simple mr-1"></i>
+                            Lembrar de mim
+                        </span>
                     </label>
                 </div>
                 
@@ -57,7 +97,10 @@
                         type="submit" 
                         class="btn btn-primary relative overflow-hidden group"
                     >
-                        <span class="relative z-10">Entrar</span>
+                        <span class="relative z-10 flex items-center">
+                            <i class="ph ph-sign-in btn-icon"></i>
+                            Entrar
+                        </span>
                         <span class="absolute inset-0 bg-primary-focus transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                     </button>
                 </div>
@@ -65,10 +108,22 @@
             
             <div class="divider my-6">OU</div>
             
+            <div class="grid grid-cols-2 gap-3 mb-6">
+                <button class="btn btn-outline btn-sm">
+                    <i class="ph ph-google-logo mr-2"></i>
+                    Google
+                </button>
+                <button class="btn btn-outline btn-sm">
+                    <i class="ph ph-facebook-logo mr-2"></i>
+                    Facebook
+                </button>
+            </div>
+            
             <div class="text-center">
                 <p class="text-base-content">
                     Ainda não tem uma conta? 
-                    <a href="#" class="link link-primary link-hover font-semibold relative group">
+                    <a href="#" class="link link-primary link-hover font-semibold relative group flex items-center justify-center mt-2">
+                        <i class="ph ph-user-plus mr-1"></i>
                         Cadastre-se
                         <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
                     </a>
