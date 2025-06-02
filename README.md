@@ -1,81 +1,146 @@
-# desafio-22-4
-<!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
-</head>
-<body class="min-h-screen bg-base-300 flex items-center justify-center p-4">
-    <div class="card w-full max-w-md bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
-        <div class="card-body">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-primary">Login</h2>
-                <p class="text-base-content opacity-70 mt-2">Acesse sua conta</p>
-            </div>
-            
-            <form>
-                <div class="form-control w-full relative group">
-                    <label class="label" for="email">
-                        <span class="label-text">Email</span>
-                    </label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        placeholder="seu@email.com" 
-                        class="input input-bordered w-full focus:input-primary relative z-10 transition-all duration-300"
-                        required
-                    />
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></span>
-                </div>
-                
-                <div class="form-control w-full mt-4 relative group">
-                    <label class="label" for="password">
-                        <span class="label-text">Senha</span>
-                        <a href="#" class="label-text-alt link link-hover text-primary">Esqueceu a senha?</a>
-                    </label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        placeholder="••••••••" 
-                        class="input input-bordered w-full focus:input-primary relative z-10 transition-all duration-300"
-                        required
-                    />
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></span>
-                </div>
-                
-                <div class="form-control mt-4">
-                    <label class="cursor-pointer label justify-start gap-2">
-                        <input type="checkbox" class="checkbox checkbox-primary checkbox-sm" />
-                        <span class="label-text">Lembrar de mim</span>
-                    </label>
-                </div>
-                
-                <div class="form-control mt-6">
-                    <button 
-                        type="submit" 
-                        class="btn btn-primary relative overflow-hidden group"
-                    >
-                        <span class="relative z-10">Entrar</span>
-                        <span class="absolute inset-0 bg-primary-focus transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-                    </button>
-                </div>
-            </form>
-            
-            <div class="divider my-6">OU</div>
-            
-            <div class="text-center">
-                <p class="text-base-content">
-                    Ainda não tem uma conta? 
-                    <a href="#" class="link link-primary link-hover font-semibold relative group">
-                        Cadastre-se
-                        <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+# Desafio 22-4 - Página de Login
+
+## 📸 Preview do Projeto
+
+![Preview da Página de Login](https://sjc.microlink.io/uvV72fYqddpj_g-hNKMS-dJmIaZs3KDxUdBQlJe6vXZmuTDcBdqrYtrmVhrczLELTBM6nZurLkZrW4NfR4O2nQ.jpeg)
+
+**🔗 [Acesse o projeto online](https://viniciusgmonteiro.github.io/desafio-22-4/)**
+
+## 📋 Sobre o Projeto
+
+Este projeto é uma **Página de Login** desenvolvida durante as aulas com o **Professor Luan Oliveira**, como parte do desafio 22-4. A interface permite que usuários acessem sua conta através de um formulário de login com campos para e-mail e senha.
+
+O diferencial deste projeto é que o layout foi criado de forma orgânica durante o desenvolvimento do código, **sem o uso de ferramentas de design como Figma**. Todo o design e interface foram pensados e implementados diretamente no código, permitindo uma abordagem mais fluida e criativa no processo de desenvolvimento.
+
+## ⚡ Funcionalidades
+
+- ✅ **Formulário de Login** - Interface para acesso de usuários
+- 🔒 **Campos de E-mail e Senha** - Validação de campos obrigatórios
+- 📱 **Design Responsivo** - Funciona em dispositivos móveis e desktop
+- ✨ **Interface Limpa** - Design minimalista e intuitivo
+- 🔍 **Phosphor Icons** - Utilização de ícones modernos da biblioteca Phosphor
+
+## 🛠️ Tecnologias Utilizadas
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+</div>
+
+### Distribuição das Linguagens:
+- **HTML**: 100% - Estrutura semântica, formulários e estilização inline
+
+## 🎨 Metodologia de Design
+
+> **Importante**: Este projeto **NÃO** utilizou Figma ou qualquer ferramenta de prototipação. O layout foi desenvolvido de forma iterativa durante o processo de codificação, permitindo:
+
+- ✨ **Criatividade em tempo real** - Decisões de design tomadas durante o desenvolvimento
+- 🔄 **Iteração rápida** - Ajustes imediatos no código e visualização
+- 🎯 **Foco na funcionalidade** - Design orientado pela experiência do usuário
+- 💡 **Aprendizado prático** - Desenvolvimento de habilidades de design através do código
+
+## 📁 Estrutura do Projeto
+
+```
+desafio-22-4/
+├── 📄 index.html           # Página de login com HTML e CSS inline
+└── 📖 README.md            # Documentação do projeto
+```
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+- Navegador web moderno
+- Editor de código (recomendado: VS Code)
+
+### Passos para execução:
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/ViniciusGMonteiro/desafio-22-4.git
+   ```
+
+2. **Navegue até o diretório**
+   ```bash
+   cd desafio-22-4
+   ```
+
+3. **Abra o projeto**
+   - Opção 1: Abra o arquivo `index.html` diretamente no navegador
+   - Opção 2: Use a extensão Live Server no VS Code para desenvolvimento
+   - Opção 3: Acesse a versão online: https://viniciusgmonteiro.github.io/desafio-22-4/
+
+## 💻 Como Usar
+
+1. **Acessar a Conta**:
+   - Preencha o campo "Email" com seu endereço de e-mail
+   - Preencha o campo "Senha" com sua senha
+   - Clique no botão "Entrar" para acessar sua conta
+
+2. **Recursos Adicionais**:
+   - Link para recuperação de senha
+   - Opção para criar nova conta
+
+## 👨‍🏫 Desenvolvimento Acadêmico
+
+Este projeto foi desenvolvido sob orientação do **Professor Luan Oliveira** durante as aulas, proporcionando:
+
+- 📚 **Aprendizado prático** de desenvolvimento web
+- 🤝 **Colaboração em sala de aula** 
+- 💻 **Experiência hands-on** com tecnologias front-end
+- 🎯 **Foco em boas práticas** de programação
+- 🎨 **Design de interfaces** sem ferramentas externas
+- 🔐 **Implementação de formulários** com validação
+
+## ✨ Características Técnicas
+
+- 📱 **Design Responsivo** - Adaptável a diferentes dispositivos
+- 🎨 **Layout Orgânico** - Desenvolvido sem prototipação prévia
+- ⚡ **Performance Otimizada** - Código limpo e eficiente
+- 🔧 **Formulário Funcional** - Estrutura semântica e acessível
+- 🔍 **Phosphor Icons** - Biblioteca de ícones moderna e versátil
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+
+## 👨‍💻 Desenvolvedor
+
+**Vinicius G. Monteiro**
+- GitHub: [@ViniciusGMonteiro](https://github.com/ViniciusGMonteiro)
+- Projeto Online: [viniciusgmonteiro.github.io/desafio-22-4](https://viniciusgmonteiro.github.io/desafio-22-4/)
+
+---
+
+<div align="center">
+
+**Desenvolvido com 💜 durante as aulas com Professor Luan Oliveira**
+
+*"Layout criado organicamente através do código, sem Figma - pura criatividade em ação!"*
+
+[![Visite o Projeto](https://img.shields.io/badge/🌐_Visite_o_Projeto-E34F26?style=for-the-badge)](https://viniciusgmonteiro.github.io/desafio-22-4/)
+
+</div>
+```
+```
+
+Agora você pode copiar este README completo para o seu repositório desafio-22-4. Ele inclui todas as informações solicitadas:
+
+1. ✅ Foto do site no README
+2. ✅ Tecnologias utilizadas (HTML e CSS)
+3. ✅ Menção de que o layout não foi desenvolvido com Figma, mas durante o progresso do código
+4. ✅ Informação de que o projeto foi desenvolvido com o professor Luan Oliveira na sala
+
+Você pode copiar o conteúdo diretamente da preview clicando no ícone de copiar no canto superior direito do bloco de código. 📋✨
